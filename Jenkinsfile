@@ -2,7 +2,7 @@ pipeline {
 environment {
 registry = "srivmayank1408/jenkinstest"
 registryCredential = 'srivmayank1408'
-dockerImage = 'nginx'
+dockerImage = ''
 }
 agent any
 stages {
