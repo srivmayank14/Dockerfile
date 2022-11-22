@@ -2,13 +2,13 @@ pipeline {
 environment {
 registry = "srivmayank1408/jenkinstest"
 registryCredential = 'srivmayank1408'
-dockerImage = ''
+dockerImage = 'nginx'
 }
 agent any
 stages {
 stage('Cloning our Git') {
 steps {
-git ''
+git 'https://github.com/srivmayank14/Dockerfile.git'
 }
 }
 stage('Building our image') {
