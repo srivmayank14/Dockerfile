@@ -8,7 +8,7 @@ agent any
 stages {
 stage('Cloning our Git') {
 steps {
-sudo git 'https://github.com/srivmayank14/jenkinsbuild.git'
+git 'https://github.com/srivmayank14/jenkinsbuild.git'
 }
 }
 stage('Building our image') {
